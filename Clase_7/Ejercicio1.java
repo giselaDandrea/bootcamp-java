@@ -31,7 +31,7 @@ public class Ejercicio1 {
         int mayor = 0;
         int menor = 0;
 
-        for (int contador = 0; contador < numeros.length; contador++) {
+        for ( contador = 0; contador < numeros.length; contador++) {
             int num = numeros[contador];
             if (num >= mayor || contador == 0) {
                 mayor = num;
@@ -46,7 +46,7 @@ public class Ejercicio1 {
         //Ejercicio3: Calcular promedio
 
         int sumatoria = 0;
-        for (int contador = 0; contador < numeros.length; contador++) {
+        for ( contador = 0; contador < numeros.length; contador++) {
             int num = numeros[contador];
             sumatoria += num;
         }

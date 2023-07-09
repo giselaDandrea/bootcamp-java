@@ -31,17 +31,29 @@ public class Ejercicio1 {
         int mayor = 0;
         int menor = 0;
 
-        for ( contador = 0; contador < numeros.length; contador++) {
+        for (int contador = 0; contador < numeros.length; contador++) {
             int num = numeros[contador];
-            if (num >= mayor) {
+            if (num >= mayor || contador == 0) {
                 mayor = num;
             }
-            if (num <= menor) {
+            if (num <= menor || contador == 0) {
                 menor = num;
             }
         }
         System.out.println("El numero mayor es: " + mayor);
         System.out.println("El numero menor es: " + menor);
+
+        //Ejercicio3: Calcular promedio
+
+        int sumatoria = 0;
+        for (int contador = 0; contador < numeros.length; contador++) {
+            int num = numeros[contador];
+            sumatoria += num;
+        }
+
+        System.out.println("La sumatoria de numeros es " + sumatoria);
+       float promedio = (float)sumatoria / numeros.length ;
+        System.out.println("El promedio es: " + promedio);
     }
 }
 
